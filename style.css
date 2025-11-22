@@ -271,19 +271,6 @@ body,
   font-weight: var(--font-weight-semi-bold);
 }
 
-.bio__facebook {
-  color: var(--color-darker-blue);
-}
-.bio__youtube {
-  color: var(--color-red);
-}
-.bio__linkedin {
-  color: var(--color-blue);
-}
-.bio__github {
-  color: #5e5e5e;
-}
-
 .bio__link {
   font-size: 2.4rem;
   font-weight: var(--font-weight-semi-bold);
@@ -662,4 +649,5 @@ html:has(.toggle-checkbox:checked) .skills__language-icon {
     width: 100vw;
   }
 }
+
 
