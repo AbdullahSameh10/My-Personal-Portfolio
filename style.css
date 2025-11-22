@@ -654,7 +654,7 @@ html:has(.toggle-checkbox:checked) .skills__language-icon {
   }
   .form_container {
     order: -1;
-    width: 100vw;
+    width: calc(100vw + 2rem);
   }
   .contact__inputs{
     box-sizing: border-box;
@@ -670,3 +670,4 @@ html:has(.toggle-checkbox:checked) .skills__language-icon {
     width: 100%;
   }
 }
+
