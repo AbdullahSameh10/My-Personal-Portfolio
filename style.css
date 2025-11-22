@@ -145,8 +145,9 @@ body,
   left: 0;
   min-width: 100%;
   min-height: 100%;
-  opacity: 0.25;
   z-index: -1;
+  /* filter: invert(1) hue-rotate(180deg) saturate(2); */
+  opacity: 0.25;
 }
 /***************CSS Header Code***************/
 .header {
@@ -165,7 +166,7 @@ body,
   z-index: -1;
   height: 100%;
   width: calc(100vw - 2rem);
-  border-bottom: 0.5rem solid var(--color-light-blue);
+  border-bottom: 0.5rem solid #1d9bf0;
   border-radius: 0 0 2rem 2rem;
   background-color: var(--color-box-img);
   top: 0;
@@ -583,8 +584,8 @@ html:has(.toggle-checkbox:checked) {
   --color-grey: #080808;
 }
 html:has(.toggle-checkbox:checked) .video-loop {
-  filter: invert(1) hue-rotate(180deg) saturate(2);
-  opacity: 0.08;
+  filter: none;
+  opacity: 0.25;
 }
 html:has(.toggle-checkbox:checked) .skills__language-icon {
   box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.2);
@@ -599,17 +600,20 @@ html:has(.toggle-checkbox:checked) .skills__language-icon {
 @media (max-width: 500px) {
   .container {
     row-gap: 8rem;
+    width: calc(100vw + 2rem);
+    padding: 0 1rem;
   }
   .grid {
     grid-template-columns: 1fr;
   }
   .grey-bg::before {
     width: calc(100% + 2rem);
-    left: -2rem;
+    /* left: -2rem; */
+    /* padding-right: 2rem; */
   }
   .header::before {
     width: calc(100% + 2rem);
-    left: -2rem;
+    left: -1rem;
   }
   .bio__picture-container {
     grid-row: 1;
@@ -631,12 +635,16 @@ html:has(.toggle-checkbox:checked) .skills__language-icon {
     row-gap: 6rem;
     justify-items: start;
   }
+  .projects__image{
+    width: fit-content;
+    margin-right: 2rem;
+  }
   .projects__data:nth-of-type(2) {
     order: 1;
   }
   .learning__container {
     font-size: var(--font-size-24);
-    width: calc(100vw - 2rem);
+    width: 100vw;
   }
   .card__title{
     font-size: var(--font-size-24);
@@ -648,8 +656,17 @@ html:has(.toggle-checkbox:checked) .skills__language-icon {
     order: -1;
     width: 100vw;
   }
+  .contact__inputs{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+    margin: 0;
+  }
+  .contact__input{
+    width: calc(50% - 1rem);
+  }
+  .contact__textarea{
+    width: 100%;
+  }
 }
-
-
-
-
