@@ -167,7 +167,7 @@ body,
   width: calc(100vw - 2rem);
   border-bottom: 0.5rem solid #1d9bf0;
   border-radius: 0 0 2rem 2rem;
-  background-color: #1d9bf080;
+  background-color: #1d9bf0;
   top: 0;
   left: -2rem;
 }
@@ -662,3 +662,4 @@ html:has(.toggle-checkbox:checked) .skills__language-icon {
     width: 100vw;
   }
 }
+
