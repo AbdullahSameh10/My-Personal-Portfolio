@@ -645,6 +645,7 @@ html:has(.toggle-checkbox:checked) .skills__language-icon {
   .learning__container {
     font-size: var(--font-size-24);
     width: calc(100vw + 2rem);
+    justify-self: center;
   }
   .card__title{
     font-size: var(--font-size-24);
@@ -670,5 +671,6 @@ html:has(.toggle-checkbox:checked) .skills__language-icon {
     width: 100%;
   }
 }
+
 
 
