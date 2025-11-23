@@ -1,0 +1,97 @@
+/***************CSS Header Code***************/
+.header {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  font-family: var(--font-family-raleway);
+  z-index: 1;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: calc(100vw - 2rem);
+  border-bottom: 0.5rem solid #1d9bf0;
+  border-radius: 0 0 2rem 2rem;
+  background-color: var(--color-box-img);
+  top: 0;
+  float: left;
+}
+.container:has(#bio:target) .navigation__bio,
+.container:has(#skills:target) .navigation__skills,
+.container:has(#learning:target) .navigation__learning,
+.container:has(#projects:target) .navigation__projects,
+.container:has(#contact:target) .navigation__contact {
+  color: var(--color-blue);
+  text-decoration: underline;
+  font-weight: var(--font-weight-bold);
+}
+
+.navigation-list {
+  display: flex;
+  gap: 2rem;
+}
+
+.navigation-link:link,
+.navigation-link:visited {
+  text-decoration: none;
+}
+
+.navigation-link:hover,
+.navigation-link:active {
+  text-decoration: underline;
+  color: var(--color-text);
+}
+
+/***************Toggle Button***************/
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  float: right;
+  margin-left: auto;
+}
+
+.toggle-checkbox {
+  display: none;
+}
+
+.toggle-label {
+  display: block;
+  position: relative;
+  background-color: var(--color-black);
+  border-radius: 1.5rem;
+  width: 4.5rem;
+  height: 2.2rem;
+  cursor: pointer;
+  padding: 0.32rem 0.35rem;
+  transition: var(--transition-timing) ease-in-out;
+}
+
+.toggle-label::after {
+  content: "☀️";
+  position: absolute;
+  font-size: 0.75rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--transition-timing) ease-in-out;
+}
+
+.toggle-checkbox:checked + .toggle-label {
+  background-color: var(--color-white);
+}
+
+.toggle-checkbox:checked + .toggle-label::after {
+  background-color: var(--color-black);
+  transform: translateX(2.25rem);
+  content: "🌙";
+}

@@ -1,0 +1,16 @@
+/***************Toggle Theme Code***************/
+
+html:has(.toggle-checkbox:checked) {
+  --color-background: var(--color-black);
+  --color-link-bg: var(--color-blue);
+  --color-text: var(--color-white);
+  --color-input-border: var(--color-white);
+  --color-grey: #080808;
+}
+html:has(.toggle-checkbox:checked) .video-loop {
+  filter: none;
+  opacity: 0.25;
+}
+html:has(.toggle-checkbox:checked) .skills__language-icon {
+  box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.2);
+}

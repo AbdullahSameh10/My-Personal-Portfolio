@@ -1,0 +1,114 @@
+/***************Responsive Design Code***************/
+@media (max-width: 1000px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    row-gap: 8rem;
+    width: calc(100vw + 2rem);
+    padding: 0 1rem;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .grey-bg::before {
+    width: calc(100% + 2rem);
+  }
+  .header::before {
+    width: calc(100% + 2rem);
+    left: -1rem;
+  }
+  .bio__picture-container {
+    grid-row: 1;
+    justify-self: center;
+    margin-bottom: 4rem;
+  }
+  .skills__list {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+  .skills__skill-title {
+    font-size: var(--font-size-24);
+  }
+  .skills__years {
+    font-size: var(--font-size-15);
+  }
+  .learning__container {
+    font-size: var(--font-size-24);
+    justify-self: center;
+  }
+  .card__header{
+    gap: 1.5rem;
+  }
+  .card__image{
+    width: 6.4rem;
+  }
+  .card__title {
+    font-size: var(--font-size-24);
+  }
+  .card__description{
+    font-size: var(--font-size-15);
+  }
+  .show-certificates{
+    font-size: var(--font-size-15);
+  }
+  .projects__main {
+    grid-template-columns: 1fr;
+    row-gap: 6rem;
+    justify-items: start;
+  }
+  .projects__image {
+    width: fit-content;
+    margin-right: 2rem;
+  }
+  .projects__data:nth-of-type(2) {
+    order: 1;
+  }
+  .contact {
+    row-gap: 6rem;
+  }
+  .form_container {
+    order: -1;
+    width: calc(100vw + 2rem);
+    justify-self: center;
+  }
+  .contact__inputs {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+    margin: 0;
+  }
+  .contact__input {
+    width: calc(50% - 1rem);
+  }
+  .contact__textarea {
+    width: 100%;
+  }
+}
+@media (min-width: 500px) and (max-width: 800px){
+  .header::before{
+    width: calc(100% + 4rem);
+  }
+  .grey-bg::before {
+    width: calc(100% + 4rem);
+  }
+}
+@media (min-width: 800px) and (max-width: 1050px){
+  .header::before{
+    min-width: calc(100% + 4rem);
+  }
+  .grey-bg::before {
+    min-width: calc(100% + 4rem);
+  }
+}
+@media (min-width: 1050px) and (max-width: 1500px){
+  .header::before{
+    min-width: calc(100vw - 2rem);
+  }
+  .grey-bg::before {
+    min-width: calc(100vw - 2rem);
+  }
+}
