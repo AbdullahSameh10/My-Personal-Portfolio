@@ -428,7 +428,7 @@ body,
   display: inline-block;
   width: 1.75rem;
   height: 1.75rem;
-  background-image: url("./images/external-icon.png");
+  background-image: url("../images/external-icon.png");
   background-size: contain;
   margin-left: 0.25rem;
 }
@@ -637,3 +637,4 @@ html:has(.toggle-checkbox:checked) .skills__language-icon {
     min-width: calc(100vw - 2rem);
   }
 } /*# sourceMappingURL=style.css.map */
+
