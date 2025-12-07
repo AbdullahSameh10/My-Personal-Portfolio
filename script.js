@@ -15,9 +15,10 @@ leftArrow.addEventListener('click', () => {
 //---------------
 const toggleLabel = document.querySelector('.toggle-label');
 
-toggleLabel?.addEventListener('keyup', (event) => {
+toggleLabel.addEventListener('keyup', (event) => {
   if (event.key === 'Enter') {
     event.currentTarget.click();
   }
 });
+
 
