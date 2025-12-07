@@ -9,4 +9,14 @@ rightArrow.addEventListener("click", () => {
 
 leftArrow.addEventListener('click', () => {
   wrapper.scrollBy({ left: 1, behavior: "smooth" });
+
+});
+
+//---------------
+const toggleBtn = document.quarySelector(".toggle-label");
+
+toggleBtn.addEventListner("keyup" , (event) => {
+  if(event.key === "Enter"){
+    toggleBtn.currentTarget.click();
+  }
 });
